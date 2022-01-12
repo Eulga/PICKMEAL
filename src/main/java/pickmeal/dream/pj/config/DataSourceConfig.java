@@ -21,7 +21,7 @@ public class DataSourceConfig {
 	public DataSource dataSource() {
 		DataSource ds = new DataSource();
 		ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		ds.setUrl("jdbc:mysql://localhost:3306/pickmeal");
+		ds.setUrl("jdbc:mysql://localhost:5050/pickmeal");
 		ds.setUsername("root");
 		ds.setPassword("adminadmin");
 		
