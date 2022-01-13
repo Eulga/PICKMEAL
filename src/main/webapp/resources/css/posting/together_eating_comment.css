@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* section */
 #commentsWrap {
-	width: 80%; margin: 0 auto;
+	width: 80%; margin: 20px auto;
 }
 /* 댓글 목록 영역 */
 .commentWrap {
@@ -24,10 +24,16 @@ time {color: #7F7F7F; font-size: 13px;}
 /* 목록의 content */
 .viewCmtContent {
 	outline: none; border: 0; background-color: #fff; color: #000;
-	height: 25px; width: 100%;
+	height: 25px; width: 90%;
+}
+/* 수정하기 버튼 */
+.viewCmtContent:disabled + .modifyContent {display: none;}
+.modifyContent {
+	outline: none; border: 0; background-color: #F67E7E; color: #fff; font-size: 12px;
+	font-weight: bold; padding: 3px 5px; cursor: pointer;
 }
 /* 더보기 버튼 */
-.moreWrap {position: relative;}
+.moreWrap {position: relative; width: 80px;}
 /* ...버튼 */
 .popUpdate {
 	height: 100%;
@@ -56,10 +62,12 @@ time {color: #7F7F7F; font-size: 13px;}
 /* 채팅하기 버튼 */
 .chat {
 	outline: none; border: 0; background-color: #fff; text-decoration: underline;
-	color: #F67E7E; font-weight: bold; cursor: pointer;
+	color: #F67E7E; font-weight: bold; cursor: pointer; text-align: right; width: 100%;
 }
 /* 댓글 쓰기 */
-#writeCommentWrap {padding: 5px 15px; width: 100%; box-sizing: border-box;}
+#writeCommentWrap {
+	padding: 5px 15px 35px 15px; width: 100%; box-sizing: border-box;
+}
 #writerNickName {
 	color: #f23f3f; font-weight: bold; margin-bottom: 5px;
 }
